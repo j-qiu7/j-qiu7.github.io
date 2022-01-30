@@ -5,6 +5,12 @@
         Jonathan Qiu - UNSW Student
     </title>
     <style>
+        html, body {
+            font-family: 'Courier New', Courier, monospace;
+            height: 100%;
+            margin: 0;
+            line-height: 20px;
+        }
         a {
             text-decoration: none;
         }
@@ -12,61 +18,86 @@
             height: 25px;
             width: 25px;
         }
+        #content {
+            min-height: calc(100vh - 70px);
+            padding: 40px 40px 0 40px;
+            text-indent: 5%;
+        }
         #intro {
+            height: 80%;
+            width: 100%;
+        }
+        #intro-text {
+            line-height: 5px;
             margin-top: 100px;
-            margin-left: 10%;
-            line-height: 10px;
-            text-indent: 5px;
-            width: 60%;
-            height: 50%;
-            border: 1px groove black;
         }
         footer {  
-            height: 100px;
-            margin-left: auto;
-            margin-right: auto;
             background-color: black;
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             text-align: center;
+            height: 100px;
         }
         #footertext {
             color: white;
             font-size: 130%;
             line-height: 0;
         }
-
         #footerimages {
             word-spacing: 10px;
             display: block;
         }
-        body {
-            font-family: 'Courier New', Courier, monospace;
+        #website-link {
+            display: block;
+            text-align: center;
         }
     </style>
 <head>
 <body style="background-color: white;">
-    <div id = "intro">
-        <h1>
-            Hi, I'm Jonathan. Welcome to my website!
-        </h1>
-        <p>
-            I'm a student currently studying a Bachelor of Computer Science & Commerce at the University of New South Wales.
-        </p>
+    <div id = "content">
+        <div id = "intro">
+            <div id = "intro-text">
+                <h1>
+                    Hi, I'm Jonathan. Welcome to my website!
+                </h1>
+                <p>
+                    I'm a student currently studying a Bachelor of Computer Science & Commerce at the University of New South Wales.
+                </p>
+            </div>
+        </div>
+        <div id = "website">
+            <h1>
+                My Portfolio Website
+            </h1>
+            <p>
+                Developing my first website. Learning HTMl and CSS to enhance my frontend developer skills.
+            </p>
+            <a id = "website-link" href="https://github.com/j-qiu7/j-qiu7.github.io">
+                <img  src="images\GitHub.png">
+            </a>
+        </div>
+        <div id = "uni-projects">
+            <h1>
+                University Projects
+            </h1>
+            <h2>
+               UNSW Dreams
+            </h2>
+        </div>
     </div>
     <footer>
-            <p id = "footertext">
-                Lets Connect
-            </p>
-            <div id = "footerimages">
-                <a href="https://github.com/j-qiu7">
-                    <img src="images\GitHub.png">
-                </a>
-                <a href="https://www.linkedin.com/in/j-qiu">
-                    <img src="images\Linkedin-logo-png-white.png">
-                </a>
-            </div>
-    </footer>
+    <p id = "footertext">
+        Lets Connect
+    </p>
+    <div id = "footerimages">
+        <a href="https://github.com/j-qiu7">
+            <img src="images\GitHub.png">
+        </a>
+        <a href="https://www.linkedin.com/in/j-qiu">
+            <img src="images\Linkedin-logo-png-white.png">
+        </a>
+    </div>
+</footer>
 </body>
