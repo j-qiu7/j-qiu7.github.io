@@ -9,46 +9,64 @@
             text-decoration: none;
         }
         img {
-            height: 40px;
-            width: 40px;
+            height: 25px;
+            width: 25px;
         }
-        .intro {
+        #intro {
             margin-top: 100px;
             margin-left: 10%;
             line-height: 10px;
             text-indent: 5px;
-            width: 40%;
+            width: 60%;
             height: 50%;
             border: 1px groove black;
         }
-        footer {
-            display: block;
+        footer {  
+            height: 100px;
             margin-left: auto;
             margin-right: auto;
-            text-align: center;
             background-color: black;
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
+            text-align: center;
+        }
+        #footertext {
+            color: white;
+            font-size: 130%;
+            line-height: 0;
+        }
+
+        #footerimages {
+            word-spacing: 10px;
+            display: block;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 <head>
 <body style="background-color: white;">
-    <div class = "intro">
+    <div id = "intro">
         <h1>
             Hi, I'm Jonathan. Welcome to my website!
         </h1>
         <p>
-            I'm an UNSW student studying Bachelor of Computer Science & Commerce
+            I'm a student currently studying a Bachelor of Computer Science & Commerce at the University of New South Wales.
         </p>
     </div>
     <footer>
-            <a href="https://github.com/j-qiu7">
-                <img src="/images/GitHubLogo.png">
-            </a>
-            <a href="https://www.linkedin.com/in/j-qiu">
-                <img src="/images/LinkedInLogo.png">
-            </a>
+            <p id = "footertext">
+                Lets Connect
+            </p>
+            <div id = "footerimages">
+                <a href="https://github.com/j-qiu7">
+                    <img src="images\GitHubLogo.png">
+                </a>
+                <a href="https://www.linkedin.com/in/j-qiu">
+                    <img src="images\Linkedin-logo-png-white.png">
+                </a>
+            </div>
     </footer>
 </body>
