@@ -8,7 +8,7 @@
         html, body {
             font-family: 'Courier New', Courier, monospace;
             height: 100vh;
-            width: 100vw;
+            width: calc(100vw - (100vw - 100%));
             margin: 0;
         }
         body {
@@ -16,7 +16,7 @@
             flex-direction: column;
         }
         #intro {
-            width: 100vw;
+            width: calc(100vw - (100vw - 100%));
             min-height: 100vh;
             text-indent: 10vw;
             padding-top: 5vw;
@@ -28,10 +28,12 @@
             color: white;
         }
         #about-me {
+            display: flex;
             animation: fade-in 1.5s ease-in forwards;
             animation-delay: 2s;
             color: white;
-            font-size: large
+            font-size: large;
+            flex-wrap: wrap;
         }
         @keyframes fade-in {
             to {color: black;}
