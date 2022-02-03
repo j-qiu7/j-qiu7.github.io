@@ -14,28 +14,41 @@
         body {
             display: flex;
             flex-direction: column;
+            text-indent: 10vw;
         }
         #intro {
             width: calc(100vw - (100vw - 100%));
             min-height: 100vh;
             text-indent: 10vw;
             padding-top: 5vw;
+            animation: background-effect 1s forwards;
+            animation-delay: 3s;
         }
+        
+        @keyframes background-effect {
+            to {background-color: rgb(102, 103, 171)}
+        }
+
         #greeting {
             overflow: hidden;
             white-space: nowrap;
-            animation: fade-in 1.5s ease-in forwards;
+            animation: fade-in-greeting 3s ease-in backwards;
             color: white;
+            font-size: 4vmin;
+        }
+        @keyframes fade-in-greeting {
+            to {color: black};
         }
         #about-me {
             display: flex;
-            animation: fade-in 1.5s ease-in forwards;
-            animation-delay: 2s;
+            animation: fade-in-about-me 1.5s ease-in backwards;
+            animation-delay: 1.5s;
             color: white;
             font-size: large;
             flex-wrap: wrap;
+            font-size: 1.5vmin;
         }
-        @keyframes fade-in {
+        @keyframes fade-in-about-me {
             to {color: black;}
         }
         a {
@@ -44,7 +57,7 @@
         img {
             height: 25px;
             width: 25px;
-            opacity: 0.5;
+            opacity: 0.5;   
         }
         img:hover {
             animation: opacity-change 0.75s ease-out infinite alternate;
@@ -72,7 +85,10 @@
         #footerimages {
             word-spacing: 0.5vw;
             display: block;
+            text-align: center;
+            text-indent: initial;
         }
+        
         #website {
             height: 100%;
             border: 1px solid black;
